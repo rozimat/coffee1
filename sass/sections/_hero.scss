@@ -1,0 +1,88 @@
+.hero{
+  width: 1280px;
+  height: 600px;
+  background-image: url(./../../images/bg-cofes.png);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 86px;
+  &__heading{
+    color: #FEFCF7;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+  &__text{
+    color:  #FEFCF7;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+  }
+  &__button{
+    width: 256px;
+    height: 56px;
+    background-color: #0E8784;
+    border-radius: 6px;
+    margin: 0;
+    margin-top: 56px;
+    border: none;
+    color: #FEFCF7;
+
+  }
+}
+@media only screen and (max-width: 768px) {
+ 
+  .hero{
+    width: 728px;
+    height: 500px;
+    background-position: center;
+    margin-bottom: 144px;
+    &__heading  {
+      font-size: 48px;
+      line-height: 48px;
+    }
+    &__text{
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+ 
+  .hero{
+    width: 334px;
+    height: 500px;
+    background-position: center center;
+    padding: 0;
+    text-align: center;
+    padding:  100px 24px;
+    margin-bottom: 167px;
+    &__heading  {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 0;
+      margin-bottom: 24px;
+    }
+    &__text{
+      font-size: 15px;
+      line-height: 25px;
+
+    }
+    &__button{
+      width: 217px;
+      height: 56px;
+      margin: 0;
+      padding: 16px 31px;
+      background-color: #0E8784;
+      border-radius: 6px;
+      border: none;
+      color: #FEFCF7;
+      align-self: center;
+  
+    }
+  }
+}

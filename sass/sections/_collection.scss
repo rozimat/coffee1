@@ -1,0 +1,100 @@
+.collection{
+  margin-bottom: 188px;
+  width: 1111px;
+  height: 524px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 136px;
+  background-image: url(./../../images/bgr-collect.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  &__wrapper{
+    height: 398px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__img{
+    margin-right: 30px;
+    margin-bottom: 71px;
+  }
+  &__img:nth-child(4){
+    margin-right: 0;
+  }
+  &__headig{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+  }
+}
+@media only screen and (max-width: 768px) {
+  
+  .collection{
+    width: 689px;
+    height: 927px;
+    align-items: start;
+    background-size: 100%;
+    background-position: top top;
+    &__wrapper{
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__box{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      margin-bottom: 32px;
+
+    }
+    &__heading  {
+      font-size: 24px;
+      line-height: 32px;
+      color: #333D4B;
+    }
+    &__text{
+      font-size: 15px;
+      line-height: 25px;
+      
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hero{
+    margin-bottom: 0;
+  }
+ .collection{
+  width: 375px;
+  height: 1321px;
+  background-position: center top;
+  background-size: 90%;
+  padding: 0;
+  flex-direction: column;
+    &__wrapper{
+      height: 1250px;
+      width: 375px;
+      padding-right: 47px;
+      gap: 0;
+    }
+    &__img{
+      width: 200px;
+      height: 151px;
+      margin: 0;
+    }
+    &__box{
+      flex-direction: column;
+      text-align: center;
+      width: 285px;
+    }
+ }
+
+}
